@@ -4,6 +4,12 @@
   "private": true,
   "homepage": "https://rwehresmann.github.io/robofriends/",
   "dependencies": {
+    "@types/jest": "^24.9.0",
+    "@types/node": "^13.1.8",
+    "@types/react": "^16.9.17",
+    "@types/react-dom": "^16.9.4",
+    "@types/react-redux": "^7.1.6",
+    "@types/redux-logger": "^3.0.7",
     "gh-pages": "^2.2.0",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
@@ -12,7 +18,8 @@
     "redux": "^4.0.5",
     "redux-logger": "^3.0.6",
     "redux-thunk": "^2.3.0",
-    "tachyons": "^4.11.1"
+    "tachyons": "^4.11.1",
+    "typescript": "^3.7.5"
   },
   "scripts": {
     "predeploy": "npm run build",

@@ -1,3 +1,4 @@
+import { ISetSearchField, RequestRobots } from './actions';
 import {
   CHANGE_SEARCHFIELD,
   REQUEST_ROBOTS_PENDING,
@@ -9,7 +10,8 @@ const initialStateSearch = {
   searchField: ''
 }
 
-export const searchRobots = (state=initialStateSearch, action={}) => {
+// TODO: Type the initial state
+export const searchRobots = (state=initialStateSearch, action: ISetSearchField) => {
   switch (action.type) {
     case CHANGE_SEARCHFIELD:
       return { ...state, searchField: action.payload }
@@ -23,7 +25,8 @@ const initialStateRequestRobots = {
   isPending: true
 }
 
-export const requestRobots = (state=initialStateRequestRobots, action={}) => {
+// TODO: Type the initial state
+export const requestRobots = (state=initialStateRequestRobots, action: RequestRobots) => {
   switch (action.type) {
     case REQUEST_ROBOTS_PENDING:
       return { ...state, isPending: true }
